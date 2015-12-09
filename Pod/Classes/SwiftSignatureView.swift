@@ -78,6 +78,18 @@ public class SwiftSignatureView: UIView {
         self.addGestureRecognizer(pan)
     }
     
+    public init() {
+        super.init(frame: CGRectZero)
+        
+        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "tap:")
+        self.addGestureRecognizer(tap)
+        
+        let pan:UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: "pan:")
+        pan.minimumNumberOfTouches = 1
+        pan.maximumNumberOfTouches = 1
+        self.addGestureRecognizer(pan)
+    }
+    
     func tap(tap:UITapGestureRecognizer) {
         let rect = self.bounds
         
