@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwiftSignatureView"
-  s.version          = "0.0.8"
+  s.version          = "0.0.9"
   s.summary          = "A lightweight, fast and customizable option for capturing signatures within your app."
 
   s.description      = <<-DESC
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Alankar Misra" => "alankarmisra@gmail.com" }
-  s.source           = { :git => "https://github.com/alankarmisra/SwiftSignatureView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/aolszewska/SwiftSignatureView.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/alankarmisra_'
 
   s.platform     = :ios, '8.0'
