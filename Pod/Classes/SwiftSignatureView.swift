@@ -90,7 +90,7 @@ public class SwiftSignatureView: UIView {
         self.addGestureRecognizer(pan)
     }
     
-    func tap(tap:UITapGestureRecognizer) {
+    public func tap(tap:UITapGestureRecognizer) {
         let rect = self.bounds
         
         UIGraphicsBeginImageContext(rect.size)
@@ -105,7 +105,7 @@ public class SwiftSignatureView: UIView {
         self.setNeedsDisplay()
     }
     
-    func pan(pan:UIPanGestureRecognizer) {
+    public func pan(pan:UIPanGestureRecognizer) {
         switch(pan.state) {
         case .Began:
             previousPoint = pan.locationInView(self)
